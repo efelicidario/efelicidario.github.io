@@ -1,2 +1,3 @@
 # efelicidario.github.io
-Brand and Web Portfolio
+Personal Brand and Web Portfolio
+![index_page](/index-fleeceTec.png)
