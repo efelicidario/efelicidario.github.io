@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>fleeceTec</title>
+        <link rel="icon" href="/img/rocket-takeoff.svg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css"
@@ -35,18 +36,31 @@
         </nav>
 
         <!-- Home -->
-        <section id="home" class="min-vh-100 bg-dark bg-gradient">
-            <!--
+        <section id="home" class="bg-dark bg-gradient">
+            <!-- * Reference: Center a div in middle of viewport *
             <div class="container min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="card bg-primary text-light">fleeceTec</div>
             </div>
             -->
-            <div class="container">
+            <div class="container min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="row">
-                    <div class="col d-flex justify-content-center min-vh-100 align-items-center">
+                    <div class="col">
                         <div class="text-center text-light">
-                            <h1 class=""><strong>fleece<span class="bg-success text-dark rounded px-1">Tec</span></strong></h1>
-                            <h5>E. Tyler Felicidario</h5>
+                            <h1 class="display-1"><strong>fleece<span class="bg-success text-dark rounded px-1">Tec</span></strong></h1>
+                            <h4><strong>E. Tyler Felicidario</strong></h4>
+                            <hr>
+                            <p>Let's link</p>
+                            <div class="btn-group">
+                                <!-- GitHub -->
+                                <p></p>
+                                <a href="https://github.com/efelicidario" class="">
+                                    <button class="btn btn-lg"><i class="bi bi-github text-success h2"></i></button>
+                                </a>
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/efelicidario/" class="">
+                                    <button class="btn btn-lg"><i class="bi bi-linkedin text-success h2"></i></button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,92 +68,131 @@
         </section>
         
         <!-- About -->
-        <section id="about" class="text-light">
-            <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-                <div class="row">
+        <section id="about" class="bg-dark">
+            <div class="container text-light">
+                <div class="row min-vh-100 d-flex align-items-center">
                     <div class="col-6">
-                        <h1 class=""><strong>about.</strong></h1>
-                        <img class="rounded" src="/img/tyler_and_alpaca.png" alt="">
+                        <div class="text-center">
+                            <h1><strong>about.</strong></h1>
+                            <img class="img-fluid shadow rounded-circle" src="/img/tyler_and_alpaca.png" alt="">
+                        </div>
                     </div>
                     <div class="col-6">
-                        <h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-backpack" viewBox="0 0 16 16">
-                                <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14ZM4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-4Zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10H5Z"/>
-                                <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v5.5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5V8a6.002 6.002 0 0 1 4-5.659ZM7 2v.083a6.04 6.04 0 0 1 2 0V2a1 1 0 0 0-2 0Zm1 1a5 5 0 0 0-5 5v5.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8a5 5 0 0 0-5-5Z"/>
-                            </svg>
-                            California State University San Marcos '24
-                        </h4>
-                        <br>
-                        <h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-                                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
-                            </svg>
-                            Computer Science <span class="text-success">Undergraduate</span>
-                        </h4>
-                        <br>
-                        <h4>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
-                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
-                            </svg>
-                            Aspiring <span class="text-success">Software Engineer</span>
-                        </h4>
-                        <br>
-                        <p class="">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum asperiores aut laborum non assumenda ex beatae officia deserunt tenetur id dolores, ducimus repellat, rerum, quos ad illum perspiciatis nihil debitis?
-                        </p>
-                        <br>
-                        <h4>Contact</h4>
-                        <p class="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-inbox" viewBox="0 0 16 16">
-                                <path d="M4.98 4a.5.5 0 0 0-.39.188L1.54 8H6a.5.5 0 0 1 .5.5 1.5 1.5 0 1 0 3 0A.5.5 0 0 1 10 8h4.46l-3.05-3.812A.5.5 0 0 0 11.02 4H4.98zm9.954 5H10.45a2.5 2.5 0 0 1-4.9 0H1.066l.32 2.562a.5.5 0 0 0 .497.438h12.234a.5.5 0 0 0 .496-.438L14.933 9zM3.809 3.563A1.5 1.5 0 0 1 4.981 3h6.038a1.5 1.5 0 0 1 1.172.563l3.7 4.625a.5.5 0 0 1 .105.374l-.39 3.124A1.5 1.5 0 0 1 14.117 13H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .106-.374l3.7-4.625z"/>
-                            </svg> felic017@csusm.edu<br>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                            </svg> +1 (661) 420-6969
-                        </p>
-                    </div>
+                        <div class="">
+                            <h5>California State University San Marcos '24</h5>
+                            <br>
+                            <h5>Computer Science <span class="text-success">Undergraduate</span></h5>
+                            <br>
+                            <h5>Aspiring <span class="text-success">Software Engineer</span></h5>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime iusto rem cum sequi sunt dolor itaque beatae voluptas tenetur.</p>
+                            <br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est soluta molestiae voluptate doloribus dignissimos quae, nemo consequatur suscipit atque saepe adipisci illo eveniet hic possimus recusandae odit asperiores autem. Veritatis?</p>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </section>
 
-        <!-- Work Experience -->
-        <section id="experience" class="text-light">
-            <div class="container min-vh-100 d-flex justify-content-center align-items-center">
-                <div class="row">
+        <section id="experience" class="bg-dark">
+            <div class="container text-light">
+                <div class="row min-vh-100 d-flex align-items-center">
                     <div class="col-6">
-                        <div class="container">
-                            <img src="/img/QuidelOrtho_logo.png" class="img-fluid" alt="">
-                            <h5>IT - Systems & Network Intern</h5>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, nobis ea sequi rerum exercitationem alias ab asperiores quasi repellat laudantium sint labore dolorem nostrum vero veritatis fuga ducimus repudiandae eos.
+                        <!-- QuidelOrtho -->
+                        <div id="quidelortho" class="d-flex flex-column align-items-center">
+                            <img src="/img/QuidelOrtho_logo.png" alt="" class="img-fluid">
+                            <p class="">
+                                <br>
+                                <button class="btn btn-outline-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#quidelortho_info" aria-expanded="false" aria-controls="collapseExample">
+                                  About
+                                </button>
                             </p>
-                            <br>
-                            <img src="/img/The_Habit_Logo.svg.png" class="img-fluid rounded" alt="">
-                            <h5>C3 - Cashier</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis repudiandae deleniti beatae, assumenda labore impedit cum sit voluptate odit optio.
-                            </p>
-                            <br>
+                            <div class="collapse" id="quidelortho_info">
+                                <div class="card bg-dark text-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="card-title">IT - Systems & Network Intern</h5>
+                                        <h6 class="card-subtitle">June 2022 - August 2022</h6>
+                                        <hr>
+                                        <p class="card-text">
+                                            • Lead the Distributed File System project to propose optimal business solutions to senior IS team<br>
+                                            • Constructed a Virtualization sandbox utilizing Nutanix CE to perform test installations, upgrade blade server BIOS and firmware, and installed Nutanix CE and Ubuntu virtual machines<br>
+                                            • Maintained and upgraded the on-prem data center to provide control and security over company network infrastructure<br>
+                                            • Programmed a PowerShell watchdog script for the company’s Rubrik Backup Service to monitor and prevent company data loss or corruption
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
+                        <br>
+                        <!-- The Habit Burger Grill -->
+                        <div id="habit" class="d-flex flex-column align-items-center">
+                            <img src="/img/habit_logo.svg" alt="" class="img-fluid w-75">
+                            <p class="">
+                                <button class="btn btn-outline-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#habit_info" aria-expanded="false" aria-controls="collapseExample">
+                                  About
+                                </button>
+                            </p>
+                            <div class="collapse" id="habit_info">
+                                <div class="card bg-dark text-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cashier - C3</h5>
+                                        <h6 class="card-subtitle">July 2020 - Present</h6>
+                                        <hr>
+                                        <p class="card-text">
+                                            • Demonstrated strong, personable customer and team communication and services<br>
+                                            • Provided training to new hires using POS systems and articulating responsibilities<br>
+                                            • Exercised consistent multi-tasking, conflict resolution, attention to detail, math, speed, and product knowledge skills
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6 ">
-                        <h1 class="p3"><strong class="d-flex justify-content-end">work experience.</strong></h1>
+                    <div class="col-6">
+                        <div class="text-center">
+                            <h1><strong>work experience.</strong></h1>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills & Interests -->
-        <section id="skills" class="text-light min-vh-100">
+        <section id="skills" class="text-light">
             <div class="container">
-                <h1>Skills & Interests</h1>
-
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class=""><strong>skills.</strong></h1>
+                        <!--
+                        <div class="text-center">
+                            <h1><strong>skills.</strong></h1>
+                            <h5>programming languages.</h5>
+                            <div id="pl-icons" class="">
+                                <img src="/img/c++.svg" alt="cpp" width="64" height="64">
+                                <img src="/img/python.svg" alt="python" width="64" height="64">
+                                <img src="/img/html.svg" alt="html" width="64" height="64">
+                                <img src="/img/css.svg" alt="css" width="64" height="64">
+                                <img src="/img/js.svg" alt="js" width="64" height="64">
+                            </div>
+                            <br>
+                            <h5>frameworks.</h5>
+                            <div id="pl-icons" class="">
+                                <img src="/img/flask.svg" alt="flask" width="64" height="64">
+                                <img src="/img/bootstrap.svg" alt="bootstrap" width="64" height="64">
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    <div class="col-6">
+                        <h1 class=""><strong>interests.</strong></h1>
+                    </div>
+                </div>
             </div>
-            
         </section>
-
+        
         <!-- Footer -->
         <footer class="text-center text-white">
             <!-- Grid container -->
@@ -150,7 +203,7 @@
             <div class="text-center p-3 border-secondary border-top">
               © 2023 Copyright:
               <a class="text-light text-decoration-none" href="http://www.fleecetec.com/">fleeceTec.com</a>
-              | Built by E. Tyler Feliicdario
+              | Designed & Built by E. Tyler Feliicdario
             </div>
             <!-- Copyright -->
           </footer>
