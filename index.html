@@ -35,28 +35,25 @@
             </div>
         </nav>
 
+    
         <!-- Home -->
         <section id="home" class="bg-dark bg-gradient">
-            <!-- * Reference: Center a div in middle of viewport *
+             <!-- * Reference: Center a div in middle of viewport 
             <div class="container min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="card bg-primary text-light">fleeceTec</div>
-            </div>
-            -->
+            </div> -->
+            
             <div class="container min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="row">
                     <div class="col">
                         <div class="text-center text-light">
-                            <h1 class="display-1"><strong>fleece<span class="bg-success text-dark rounded px-1">Tec</span></strong></h1>
-                            <h4><strong>E. Tyler Felicidario</strong></h4>
+                            <h1 class="fw-bold" style="font-size: 80px;">fleece<span class="bg-success text-dark rounded px-1">Tec</span></h1>
                             <hr>
-                            <p>Let's link</p>
+                            <h4>E. Tyler Felicidario</h4>
                             <div class="btn-group">
-                                <!-- GitHub -->
-                                <p></p>
                                 <a href="https://github.com/efelicidario" class="">
                                     <button class="btn btn-lg"><i class="bi bi-github text-success h2"></i></button>
                                 </a>
-                                <!-- LinkedIn -->
                                 <a href="https://www.linkedin.com/in/efelicidario/" class="">
                                     <button class="btn btn-lg"><i class="bi bi-linkedin text-success h2"></i></button>
                                 </a>
@@ -74,20 +71,24 @@
                     <div class="col-6">
                         <div class="text-center">
                             <h1><strong>about.</strong></h1>
-                            <img class="img-fluid shadow rounded-circle" src="/img/tyler_and_alpaca.png" alt="">
+                            <img class="img-fluid shadow-lg rounded-circle" src="/img/tyler_and_alpaca.png" alt="">
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="">
-                            <h5>California State University San Marcos '24</h5>
+                        <div id="about-body">
+                            <h2 class="fw-bold">California State University <span class="text-success">San Marcos '24</span></h2>
+                            <h3 class="fw-bold">Bachelor of Science in <span class="text-success">Computer Science</span></h3>
+                            <h3 class="fw-bold">Aspiring <span class="text-success">Software Engineer</span></h3>
                             <br>
-                            <h5>Computer Science <span class="text-success">Undergraduate</span></h5>
-                            <br>
-                            <h5>Aspiring <span class="text-success">Software Engineer</span></h5>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime iusto rem cum sequi sunt dolor itaque beatae voluptas tenetur.</p>
-                            <br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est soluta molestiae voluptate doloribus dignissimos quae, nemo consequatur suscipit atque saepe adipisci illo eveniet hic possimus recusandae odit asperiores autem. Veritatis?</p>
+                            <p style="font-size: 18px;">
+                                Creative, motivated Computer Science student with a passion for technology and innovation that will impact the world.
+                                <br>
+                                <br>
+                                Senior Year student at California State University San Marcos with a focus on Software Engineering. Previously interned at QuidelOrtho and worked on data centers, clusters, and virtualization. Seeking new opportunities to create impact and make a difference.
+                                <br>
+                                <br>
+
+                            </p>
                         </div>
                     </div> 
                 </div>
@@ -98,15 +99,39 @@
             <div class="container text-light">
                 <div class="row min-vh-100 d-flex align-items-center">
                     <div class="col-6">
+                        <!-- GDSC -->
+                        <div id="gdsc" class="d-flex flex-column align-items-">
+                            <img src="/img/gdsc.png" 
+                            alt="gdsc" 
+                            class="img-fluid" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#gdsc_info">
+                            <br>
+                            <div class="collapse" id="gdsc_info">
+                                <div class="card bg-dark text-light border-0">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tech Lead</h5>
+                                        <h6 class="card-subtitle">Sep. 2023 - Present</h6>
+                                        <hr>
+                                        <p class="card-text">
+                                            • Lead an app development workshop on Visual Studio, C#, and .NET framework to educate students on software development fundamentals<br>
+                                            • Worked alongside the core team to plan student organization events and push students towards future career paths and goals
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
                         <!-- QuidelOrtho -->
-                        <div id="quidelortho" class="d-flex flex-column align-items-center">
-                            <img src="/img/QuidelOrtho_logo.png" alt="" class="img-fluid">
-                            <p class="">
-                                <br>
-                                <button class="btn btn-outline-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#quidelortho_info" aria-expanded="false" aria-controls="collapseExample">
-                                  About
-                                </button>
-                            </p>
+                        <div id="quidelortho" class="d-flex flex-column align-items-">
+                            <img src="/img/QuidelOrtho_logo.png" 
+                            alt="quidelortho" 
+                            class="img-fluid" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#quidelortho_info">
+                            <br>
                             <div class="collapse" id="quidelortho_info">
                                 <div class="card bg-dark text-light border-0">
                                     <div class="card-body">
@@ -126,12 +151,12 @@
                         <br>
                         <!-- The Habit Burger Grill -->
                         <div id="habit" class="d-flex flex-column align-items-center">
-                            <img src="/img/habit_logo.svg" alt="" class="img-fluid w-75">
-                            <p class="">
-                                <button class="btn btn-outline-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#habit_info" aria-expanded="false" aria-controls="collapseExample">
-                                  About
-                                </button>
-                            </p>
+                            <img src="/img/habit.png" 
+                            alt="habit" 
+                            class="img-fluid " 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#habit_info">
                             <div class="collapse" id="habit_info">
                                 <div class="card bg-dark text-light border-0">
                                     <div class="card-body">
@@ -150,7 +175,7 @@
                     </div>
                     <div class="col-6">
                         <div class="text-center">
-                            <h1><strong>work experience.</strong></h1>
+                            <h1><strong>experience.</strong></h1>
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
                                 <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
                             </svg>
@@ -165,12 +190,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">
-                        <h1 class=""><strong>skills.</strong></h1>
-                        <!--
                         <div class="text-center">
                             <h1><strong>skills.</strong></h1>
                             <h5>programming languages.</h5>
                             <div id="pl-icons" class="">
+                                <!--<img src="" alt="" width="64" height="64">-->
                                 <img src="/img/c++.svg" alt="cpp" width="64" height="64">
                                 <img src="/img/python.svg" alt="python" width="64" height="64">
                                 <img src="/img/html.svg" alt="html" width="64" height="64">
@@ -179,12 +203,17 @@
                             </div>
                             <br>
                             <h5>frameworks.</h5>
-                            <div id="pl-icons" class="">
+                            <div id="framework-icons" class="">
                                 <img src="/img/flask.svg" alt="flask" width="64" height="64">
                                 <img src="/img/bootstrap.svg" alt="bootstrap" width="64" height="64">
                             </div>
+                            <h5>tools</h5>
+                            <div id="tool-icons" class="">
+                                <img src="/img/git.svg" alt="git" width="64" height="64">
+                                <img src="/img/visual-studio-code.svg" alt="vscode" width="64" height="64">
+                                <img src="/img/visual-studio.svg" alt="vs" width="64" height="64">
+                            </div>
                         </div>
-                        -->
                     </div>
                     <div class="col-6">
                         <h1 class=""><strong>interests.</strong></h1>
