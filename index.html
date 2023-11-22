@@ -11,7 +11,7 @@
     </head>
     <body class="bg-dark">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <nav id="navbar-id" class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
             <div class="container">
                 <a href="#home" class="navbar-brand fw-bold">fleece<span class="bg-success text-dark rounded px-1 ">Tec</span></a>
 
@@ -28,33 +28,39 @@
                             <a href="#experience" class="nav-link">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a href="img/resume.pdf" class="nav-link border border-success rounded">Resume</a>
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="img/resume.pdf" class="btn btn-success">Resume</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-    
+        </div>
         <!-- Home -->
         <section id="home" class="bg-dark bg-gradient">
              <!-- * Reference: Center a div in middle of viewport 
             <div class="container min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="card bg-primary text-light">fleeceTec</div>
             </div> -->
-            
             <div class="container min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="row">
                     <div class="col">
                         <div class="text-center text-light">
                             <h1 class="fw-bold" style="font-size: 80px;">fleece<span class="bg-success text-dark rounded px-1">Tec</span></h1>
                             <hr>
-                            <h4>E. Tyler Felicidario</h4>
                             <div class="btn-group">
-                                <a href="https://github.com/efelicidario" class="">
+                                <a href="https://github.com/efelicidario" 
+                                class="" 
+                                target="_blank">
                                     <button class="btn btn-lg"><i class="bi bi-github text-success h2"></i></button>
                                 </a>
-                                <a href="https://www.linkedin.com/in/efelicidario/" class="">
+                                <a href="https://www.linkedin.com/in/efelicidario/" 
+                                class=""
+                                target="_blank">
                                     <button class="btn btn-lg"><i class="bi bi-linkedin text-success h2"></i></button>
                                 </a>
                             </div>
@@ -70,16 +76,16 @@
                 <div class="row min-vh-100 d-flex align-items-center">
                     <div class="col-6">
                         <div class="text-center">
-                            <h1><strong>about.</strong></h1>
-                            <img class="img-fluid shadow-lg rounded-circle" src="/img/tyler_and_alpaca.png" alt="">
+                            <img class="img-fluid shadow-lg rounded-circle w-50" 
+                            src="/img/tyler_and_alpaca.png" 
+                            alt="">
                         </div>
                     </div>
                     <div class="col-6">
                         <div id="about-body">
-                            <h2 class="fw-bold">California State University <span class="text-success">San Marcos '24</span></h2>
-                            <h3 class="fw-bold">Bachelor of Science in <span class="text-success">Computer Science</span></h3>
-                            <h3 class="fw-bold">Aspiring <span class="text-success">Software Engineer</span></h3>
-                            <br>
+                            <h2 class="fw-bold">Edmund Tyler Felicidario III</h2>
+                            <h4 class="fw-bold">Aspiring <span class="text-success">Software Engineer</span></h4>
+                            <hr>
                             <p style="font-size: 18px;">
                                 Creative, motivated Computer Science student with a passion for technology and innovation that will impact the world.
                                 <br>
@@ -87,7 +93,6 @@
                                 Senior Year student at California State University San Marcos with a focus on Software Engineering. Previously interned at QuidelOrtho and worked on data centers, clusters, and virtualization. Seeking new opportunities to create impact and make a difference.
                                 <br>
                                 <br>
-
                             </p>
                         </div>
                     </div> 
@@ -95,129 +100,75 @@
             </div>
         </section>
 
-        <section id="experience" class="bg-dark">
-            <div class="container text-light">
-                <div class="row min-vh-100 d-flex align-items-center">
-                    <div class="col-6">
-                        <!-- GDSC -->
-                        <div id="gdsc" class="d-flex flex-column align-items-">
-                            <img src="/img/gdsc.png" 
-                            alt="gdsc" 
-                            class="img-fluid" 
-                            type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#gdsc_info">
-                            <br>
-                            <div class="collapse" id="gdsc_info">
-                                <div class="card bg-dark text-light border-0">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tech Lead</h5>
-                                        <h6 class="card-subtitle">Sep. 2023 - Present</h6>
-                                        <hr>
-                                        <p class="card-text">
-                                            • Lead an app development workshop on Visual Studio, C#, and .NET framework to educate students on software development fundamentals<br>
-                                            • Worked alongside the core team to plan student organization events and push students towards future career paths and goals
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- QuidelOrtho -->
-                        <div id="quidelortho" class="d-flex flex-column align-items-">
-                            <img src="/img/QuidelOrtho_logo.png" 
-                            alt="quidelortho" 
-                            class="img-fluid" 
-                            type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#quidelortho_info">
-                            <br>
-                            <div class="collapse" id="quidelortho_info">
-                                <div class="card bg-dark text-light border-0">
-                                    <div class="card-body">
-                                        <h5 class="card-title">IT - Systems & Network Intern</h5>
-                                        <h6 class="card-subtitle">June 2022 - August 2022</h6>
-                                        <hr>
-                                        <p class="card-text">
-                                            • Lead the Distributed File System project to propose optimal business solutions to senior IS team<br>
-                                            • Constructed a Virtualization sandbox utilizing Nutanix CE to perform test installations, upgrade blade server BIOS and firmware, and installed Nutanix CE and Ubuntu virtual machines<br>
-                                            • Maintained and upgraded the on-prem data center to provide control and security over company network infrastructure<br>
-                                            • Programmed a PowerShell watchdog script for the company’s Rubrik Backup Service to monitor and prevent company data loss or corruption
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- The Habit Burger Grill -->
-                        <div id="habit" class="d-flex flex-column align-items-center">
-                            <img src="/img/habit.png" 
-                            alt="habit" 
-                            class="img-fluid " 
-                            type="button" 
-                            data-bs-toggle="collapse" 
-                            data-bs-target="#habit_info">
-                            <div class="collapse" id="habit_info">
-                                <div class="card bg-dark text-light border-0">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Cashier - C3</h5>
-                                        <h6 class="card-subtitle">July 2020 - Present</h6>
-                                        <hr>
-                                        <p class="card-text">
-                                            • Demonstrated strong, personable customer and team communication and services<br>
-                                            • Provided training to new hires using POS systems and articulating responsibilities<br>
-                                            • Exercised consistent multi-tasking, conflict resolution, attention to detail, math, speed, and product knowledge skills
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Experience -->
+        <section id="experience" class="min-vh-100">
+            <div class="container">
+                <h1 class="text-light pt-5">
+                    <br>
+                    <strong>experience</strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                        <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                    </svg>
+                </h1>
+                <div class="card bg-secondary text-light">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>IT - Systems & Network Intern</strong> | QuidelOrtho</h5>
+                        <h6 class="card-subtitle mb-2 fst-italic">June 2022 - August 2022</h6>
+                        <ul>
+                            <li>Lead the Distributed File System project to propose optimal business solutions to senior IS team</li>
+                            <li>Constructed a Virtualization sandbox utilizing Nutanix CE to perform test installations, upgrade blade server BIOS and firmware, and installed Nutanix CE and Ubuntu virtual machines</li>
+                            <li>Maintained and upgraded the on-prem data center to provide control and security over company network infrastructure</li>
+                            <li>Programmed a PowerShell watchdog script for the company’s Rubrik Backup Service to monitor and prevent company data loss or corruption</li>
+                        </ul>
                     </div>
-                    <div class="col-6">
-                        <div class="text-center">
-                            <h1><strong>experience.</strong></h1>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
-                                <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
-                            </svg>
-                        </div>
+                </div>
+                <br>
+                <div class="card bg-secondary text-light">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Technical Lead</strong> | Google Developer Student Club</h5>
+                        <h6 class="card-subtitle mb-2 fst-italic">September 2023 - Present</h6>
+                        <ul>
+                            <li>Lead an app development workshop on Visual Studio, C#, and .NET framework to educate students on software development fundamentals</li>
+                            <li>Worked alongside the core team to plan student organization events and push students towards future career paths and goals</li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="card bg-secondary text-light">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Cashier - C3</strong> | The Habit Burger Grill</h5>
+                        <h6 class="card-subtitle mb-2 fst-italic">June 2020 - Present</h6>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills & Interests -->
-        <section id="skills" class="text-light">
-            <div class="container">
-                <div class="row">
+        <!-- Education -->
+        <section id="education" class="">
+            <div class="container text-light">
+                <div class="row min-vh-100 d-flex align-items-center">
                     <div class="col-6">
                         <div class="text-center">
-                            <h1><strong>skills.</strong></h1>
-                            <h5>programming languages.</h5>
-                            <div id="pl-icons" class="">
-                                <!--<img src="" alt="" width="64" height="64">-->
-                                <img src="/img/c++.svg" alt="cpp" width="64" height="64">
-                                <img src="/img/python.svg" alt="python" width="64" height="64">
-                                <img src="/img/html.svg" alt="html" width="64" height="64">
-                                <img src="/img/css.svg" alt="css" width="64" height="64">
-                                <img src="/img/js.svg" alt="js" width="64" height="64">
-                            </div>
-                            <br>
-                            <h5>frameworks.</h5>
-                            <div id="framework-icons" class="">
-                                <img src="/img/flask.svg" alt="flask" width="64" height="64">
-                                <img src="/img/bootstrap.svg" alt="bootstrap" width="64" height="64">
-                            </div>
-                            <h5>tools</h5>
-                            <div id="tool-icons" class="">
-                                <img src="/img/git.svg" alt="git" width="64" height="64">
-                                <img src="/img/visual-studio-code.svg" alt="vscode" width="64" height="64">
-                                <img src="/img/visual-studio.svg" alt="vs" width="64" height="64">
-                            </div>
+                            <a href="https://www.csusm.edu/cs/index.html" target="_blank">
+                                <img class="img-fluid shadow-lg rounded-circle w-50" 
+                                src="/img/csusm_seal.svg" 
+                                alt="csusm_seal">
+                            </a>
                         </div>
                     </div>
                     <div class="col-6">
-                        <h1 class=""><strong>interests.</strong></h1>
-                    </div>
+                        <div id="education-body" class="text-center">
+                            <h2 class="fw-bold">California State University San Marcos</h2>
+                            <br>
+                            <h3>B.S. in Computer Science</h3>
+                            <h3>Expected Graduation May 2024</h3>
+                            <h3>GPA 3.40</h3>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </section>
@@ -232,7 +183,7 @@
             <div class="text-center p-3 border-secondary border-top">
               © 2023 Copyright:
               <a class="text-light text-decoration-none" href="http://www.fleecetec.com/">fleeceTec.com</a>
-              | Designed & Built by E. Tyler Feliicdario
+              | Designed & Built by E. Tyler Felicidario
             </div>
             <!-- Copyright -->
           </footer>
