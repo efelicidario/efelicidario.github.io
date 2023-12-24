@@ -4,7 +4,9 @@
 .magenta {
     color: rgb(113, 50, 252);
 }
-
+.dark-purple2 {
+    background-color: rgb(20, 17, 35);
+}
 /* Brand */
 .gradient {
     background: -webkit-linear-gradient(.90turn, #9D4EDD, #3C096C);
@@ -54,6 +56,18 @@
     font-size: 35px;
 }
 
+/* About Section */
+.about-img {
+    margin: auto;
+    height: auto;
+    width: 100%;
+}
+.about-desc{
+    margin: auto;
+    font-weight: 500;
+    font-size: 18px;
+}
+
 /* Experience Section */
 .exp {
     background-color: rgb(113, 50, 252);
@@ -63,4 +77,18 @@
 }
 .exp-trans:hover {
     transform: scale(1.025);
+}
+.text-dark-purple {
+    color: #10002b;
+}
+
+/* Projects Section */
+.btn-magenta {
+    background-color: #9D4EDD;
+}
+
+/* Education Section */
+.edu-uni {
+    font-size: 40px;
+    font-weight: bold;
 }
